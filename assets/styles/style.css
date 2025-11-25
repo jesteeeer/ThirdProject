@@ -11,6 +11,7 @@ html {
 body {
     margin: 0;
     font-family: 'Chinese Rocks', sans-serif;
+    background-color: black;
 }
 
 .navbar.custom-navbar {
@@ -71,11 +72,23 @@ body {
     background-color: black;
 }
 
-.chapter-img img {
+.chapter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.chapter-img img {
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-    object-fit: cover;
+}
+
+.chapter-img:hover .chapter-overlay {
+    opacity: 1;
 }
 
 .chapter-img:hover img {
