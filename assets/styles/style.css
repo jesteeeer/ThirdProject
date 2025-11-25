@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Chinese Rocks';
-    src: url('assets/fonts/chinese rocks rg.ttf') format('truetype');
+    src: url('../fonts/chinese_rocks_rg.ttf') format('truetype');
 
 }
 
@@ -14,7 +14,7 @@ body{
 }
 
 .navbar.custom-navbar{
-    background-color: black;
+    background: black;
 }
 
 .navbar.custom-navbar .nav-link{
@@ -71,24 +71,9 @@ body{
     background-color: black;
 }
 
-.chapter-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.50);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.chapter-img:hover .chapter-overlay{
-    opacity: 1;
-}
-
 .chapter-img img {
-    width: 1000px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     object-fit: cover;
 }
@@ -97,7 +82,7 @@ body{
     filter: brightness(50%);
 }
 
-.beauty{
+.trailer{
     background-color: black;
 }
 
@@ -118,4 +103,18 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+.custom-footer{
+    background-color:  rgba(198, 18, 1, 100%);
+}
+
+.footer-content{
+    position: relative;
+}
+
+.rockstar-logo{
+    height: 60px;
+    position: absolute;
+    left: 10px;
 }

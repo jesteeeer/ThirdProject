@@ -1,6 +1,6 @@
 var chapters =  [
     {
-        "image": "assets/images/chap1.png",
+        "image": "assets/images/chap1.jpg",
         "chapter": "Chapter 1",
         "title": "Colter"
     },
@@ -10,17 +10,17 @@ var chapters =  [
         "title": "Horshoe Overlook"
     },
     {
-        "image": "assets/images/chap3.png",
+        "image": "assets/images/chap3.jpg",
         "chapter": "Chapter 3",
         "title": "Clemens Point"
     },
     {
-        "image": "assets/images/chap 4.png",
+        "image": "assets/images/chap4.jpg",
         "chapter": "Chapter 4",
         "title": "Saint Denis"
     },
     {
-        "image": "assets/images/chap5.png",
+        "image": "assets/images/chap5.jpg",
         "chapter": "Chapter 5",
         "title": "Guarma"
     },
