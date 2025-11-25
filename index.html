@@ -12,13 +12,13 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
+    <nav class="navbar navbar-expand-md custom-navbar">
         <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav d-flex flex-row gap-3 fs-5">
-                <li class="nav-item"><a class="nav-link fw-medium fs-5 fs-sm-6" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link fw-medium fs-5 fs-sm-6" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link fw-medium fs-5 fs-sm-6" href="#characs">Characters</a></li>
-                <li class="nav-item"><a class="nav-link fw-medium fs-5 fs-sm-6" href="#chaps">Chapters</a></li>
+            <ul class="navbar-nav d-flex flex-row gap-3">
+                <li class="nav-item"><a class="nav-link fw-medium fs-4 fs-sm-6" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium fs-4 fs-sm-6" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium fs-4 fs-sm-6" href="#characs">Characters</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium fs-4 fs-sm-6" href="#chaps">Chapters</a></li>
             </ul>
         </div>
         </div>
@@ -29,11 +29,8 @@
         <div class="container-fluid text-center">
             <p class="fs-5 lh-sm mb-4 mx-4" style="letter-spacing: 1px; text-align: center;">
                 Red Dead Redemption 2 is an immersive open-world adventure set in the final years of the American Wild
-                West. Known for its breathtaking landscapes, lifelike animations,
-                and richly detailed environments, it delivers one of the most visually stunning experiences ever
-                created. With its emotional story and cinematic presentation,
-                Red Dead Redemption 2 goes beyond being a game—offering a once-in-a-lifetime experience that feels real,
-                powerful, and unforgettable.
+                West. With breathtaking landscapes, lifelike animations, and a powerful emotional story, it delivers a
+                cinematic, once-in-a-lifetime experience that feels real, unforgettable, and truly life-changing
             </p>
         </div>
     </div>
@@ -55,7 +52,7 @@
         </div>
     </div>
     <!-- Video -->
-    <div class="beauty">
+    <div class="trailer">
         <div class="container">
             <div class="row d-flex justify-content-center text-center mb-0">
                 <h1 class="text-center text-white display-3 mt-5">GAME TRAILER</h1>
@@ -72,12 +69,18 @@
     </div>
 
     <!-- Red Dead Redemption2 -->
-    <div class="end">
-        <div class="container">
-            <div class="row">
-            </div>
+    <div class="end"></div>
+
+    <!-- Footer -->
+    <footer class="custom-footer text-white text-center py-4">
+        <div class="footer-content d-flex align-items-center justify-content-center px-3">
+            <img src="assets/images/logo.png" class="rockstar-logo">
+            <h4 style="letter-spacing: 1px;">
+                FOR EDUCATIONAL PURPOSES ONLY.
+            </h4>
         </div>
-    </div>
+    </footer>
+
     <script src="assets/characters.js"></script>
     <script>
         var containerRow = document.getElementById("characters-row");
@@ -107,19 +110,17 @@
 
         for (var i = 0; i < chapters.length; i++) {
             containerRow.innerHTML += `
-            <div class="row text-center">
-                <div class="chapter-card my-4">
-
+                <div class="chapter-card my-2">
                     <div class = "chapter-img position-relative overflow-hidden d-flex justify-content-center">
                         <img src="` + chapters[i].image + `" class="card-img rounded-3">
-
-                        <div class = "chapter-overlay d-flex align-items-center justify-content-center text-center text-white">
-                            <div>
-                                <h3 style="color:red; letter-spacing: 1px">`+ chapters[i].chapter + `</h3>
-                                <p class = "fs-3"> ` + chapters[i].title + `</p>
-                            </div>
+                    </div>
+                    <div class = "chapter-title d-flex align-items-center justify-content-center text-center text-white">
+                        <div>
+                            <h2 style="color:red; letter-spacing: 1px">`+ chapters[i].chapter + `</h2>
+                            <p class = "fs-2"> ` + chapters[i].title + `</p>
                         </div>
-            </div>
+                    </div>
+                </div>
             `
         }
     </script>
