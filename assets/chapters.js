@@ -3,13 +3,13 @@ var chapters =  [
         "image": "assets/images/chap1.jpg",
         "chapter": "Chapter 1",
         "title": "Colter",
-        "description": "Trapped in a deadly blizzard after a job gone wrong, the gang must survive the cold, the law, and their own fears as everything starts to fall apart."
+        "description": "Trapped in a deadly blizzard after a job gone wrong, the gang must survive the cold, the law, and their own fears."
     },
     {
         "image": "assets/images/chap2.jpg",
         "chapter": "Chapter 2",
         "title": "Horshoe Overlook",
-        "description": "Hope returns as the gang rebuilds in the heartlands—until old enemies, new temptations, and rising tensions begin to crack the peace."
+        "description": "Hope returns as the gang rebuilds in the heartlands—until old enemies begin to crack the peace."
     },
     {
         "image": "assets/images/chap3.jpg",
@@ -27,7 +27,7 @@ var chapters =  [
         "image": "assets/images/chap5.jpg",
         "chapter": "Chapter 5",
         "title": "Guarma",
-        "description": "Shipwrecked on a violent island ruled by tyranny, Arthur fights to survive a revolution—while the gang slips further out of Dutch’s control."
+        "description": "Shipwrecked on a violent island, Arthur fights to survive a revolution—while the gang slips further out of Dutch’s control."
     },
     {
         "image": "assets/images/chap6.png",
